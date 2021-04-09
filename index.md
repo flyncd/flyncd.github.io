@@ -22,17 +22,8 @@ A set of publicly accessible, perfomance metrics - appropriately signed by the m
 ##### Implementation Steps
 1. The maintainer of the protocol registers the credit score transaction oracle on the blockchain
 2. The application which determines the credit score should record all requests
-3. Periodically, after the credit score performance window has elpased (say, 3 months - enough time to determine if the borrower has defaulted) for each set of transactions, the maintiner of the protocol should aggregate and collate performance metrics for the model. Eg:
-
-  - Gini of the score (How good the model is at separating goods from bads)
-  - Percentage of bad loans where a score over a certain threshold was determined
-  - Percentage of good loans where a score under a certain threshold was determined
-
-4. These metrics can then be published to the blockchain, along with:
-
-  - A reference to the registration blockchain request
-  - A link to the raw data used to determine the performance metrics
-  - A hash of the performance metric data
+3. Periodically, after the credit score performance window has elpased (say, 3 months - enough time to determine if the borrower has defaulted) for each set of transactions, the maintiner of the protocol should aggregate and collate performance metrics for the model. Eg: Gini of the score (How good the model is at separating goods from bads), Percentage of bad loans where a score over a certain threshold was determined, Percentage of good loans where a score under a certain threshold was determined
+4. These metrics can then be published to the blockchain, along with a reference to the registration blockchain request, a link to the raw data used to determine the performance metrics and a hash of the performance metric data
 
 #### Aggregating the Data
 
