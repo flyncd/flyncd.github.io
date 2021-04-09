@@ -1,3 +1,4 @@
+markdown: rdiscount
 theme: jekyll-theme-tactile
 title: Using MetaData on the Cardano Blockchain
 description: 
