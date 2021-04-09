@@ -19,11 +19,27 @@ The maintainers of the lending protocol need to demonstrate to the community tha
 
 A set of publicly accessible, perfomance metrics - appropriately signed by the maintainer's of the protocol - could be used to provide assurance of the credit score's authenticity, reliability and utility. These metrics, stored as blockchain meta data information in periodic transactions could be used to provide assurance to the both parties involved in the transaction while giving the maintainers of the lending protocol a reference point for any assessment of their protocol.
 
-##### Implementation Steps
-1. The maintainer of the protocol registers the credit score transaction oracle on the blockchain
-2. The application which determines the credit score should record all requests
-3. Periodically, after the credit score performance window has elpased (say, 3 months - enough time to determine if the borrower has defaulted) for each set of transactions, the maintiner of the protocol should aggregate and collate performance metrics for the model. Eg: Gini of the score (How good the model is at separating goods from bads), Percentage of bad loans where a score over a certain threshold was determined, Percentage of good loans where a score under a certain threshold was determined
-4. These metrics can then be published to the blockchain, along with a reference to the registration blockchain request, a link to the raw data used to determine the performance metrics and a hash of the performance metric data
+#### Implementation Steps
+
+##### Registration
+The maintainer of the protocol registers the credit score transaction oracle on the blockchain
+
+##### Storage
+The application which determines the credit score needs to keep a record for all requests and responses (eg a transaction log)
+
+##### Collation
+Periodically, after the credit score performance window has elpased (say, 3 months - enough time to determine if the borrower has defaulted) for each set of transactions, the maintainer of the protocol should aggregate and collate performance metrics for the model.
+
+Example of performance metrics could be:
+* Gini of the score (How good the model is at separating goods from bads)
+* Percentage of bad loans where a score over a certain threshold was determined
+* Percentage of good loans where a score under a certain threshold was determined
+
+##### Submission
+These metrics can then be published to the blockchain, along with:
+* a reference to the registration blockchain request
+* a link to the raw data used to determine the performance metrics
+* a hash of the performance metric data to ensure authenticity of the raw data
 
 #### Aggregating the Data
 
