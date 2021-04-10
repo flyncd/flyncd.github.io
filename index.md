@@ -66,5 +66,5 @@ What if Artificial Intelligence agents could use this performance meta data to d
 * Steven Pirois
 
 ### Cardano Proposal
-The Cardano blockchain's capacity to store 16k worth of meta data . A proof-of-concept of the idea is planned for a Catalyst Project Fund 5 Proposal
+The Cardano blockchain's capacity to store 16k worth of meta data in a single transaction makes it the ideal blockchain to carry out a proof-of-concept for the idea and is planned for a Catalyst Project Fund 5 Proposal
 
